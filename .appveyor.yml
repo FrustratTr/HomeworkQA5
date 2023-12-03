@@ -9,7 +9,8 @@ branches:
 build: off  # будем использовать свой скрипт сборки
 
 install:
+  - java -jar ./artifacts/app-card-delivery.jar &
   - chmod +x gradlew
 
-script:
-  - ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации.
+build_script:
+  - ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
