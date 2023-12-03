@@ -1,5 +1,4 @@
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
@@ -11,10 +10,8 @@ import java.time.Duration;
 
 
 public class CardDeliveryTest {
-    @BeforeAll
-    public static void setUp() {
-        Configuration.headless = true;
-    }
+
+
 
     @Test
     public void shouldSubmitCardDeliveryForm() {
